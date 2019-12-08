@@ -23,8 +23,8 @@ public class InterestCalculator {
         // declare variables and initialize if necessary
         float annualInterestRate;
         double initialPrincipal, currentBalance, interestEarned = 0;
-        int numberOfYears, numberOfCompoundingPeriods = 4;
-        String annualInterestRateString, initialPrincipalString, numberOfYearsString;
+        int numberOfYears, numberOfCompoundingPeriods = 0;
+        String annualInterestRateString, initialPrincipalString, numberOfYearsString, numberOfCompoundingPeriodsString;
         
         // prompt user for interest rate and store in variable
         System.out.println("Enter the annual interest rate: ");
@@ -40,6 +40,17 @@ public class InterestCalculator {
         System.out.println("Enter the number of years: ");
         numberOfYearsString = sc.nextLine();
         numberOfYears = Integer.parseInt(numberOfYearsString);
+        
+        // prompt user for quarterly, monthly or daily
+        System.out.println("Do you want quarterly, monthly or daily? ");
+        numberOfCompoundingPeriodsString = sc.nextLine();
+        if(numberOfCompoundingPeriodsString.equalsIgnoreCase("quarterly")) {
+            numberOfCompoundingPeriods = 4;
+        } else if (numberOfCompoundingPeriodsString.equalsIgnoreCase("monthly")) {
+            numberOfCompoundingPeriods = 12;
+        } else if (numberOfCompoundingPeriodsString.equalsIgnoreCase("daily")) {
+            numberOfCompoundingPeriods = 365;
+        }
         
         // initial beginning year balance to inital principal
         currentBalance = initialPrincipal;
