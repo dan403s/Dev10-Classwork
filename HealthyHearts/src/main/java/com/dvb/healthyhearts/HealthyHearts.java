@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.dvb.healthyhearts;
 
 import java.util.Scanner;
@@ -7,24 +12,30 @@ import java.util.Scanner;
  * @author Daniel Bart
  */
 public class HealthyHearts {
-    
+
+    // main method
     public static void main(String[] args) {
-        int age;
-        float maxHeartRate, minTargetRate, maxTargetRate;
-        
-        Scanner inputReader = new Scanner(System.in);
-        
-        System.out.println("How old are you? ");
-        String ageString = inputReader.nextLine();
-        
-        age = Integer.parseInt(ageString);
-        
-        maxHeartRate = 220 - age;
-        minTargetRate = 0.5f * maxHeartRate;
-        maxTargetRate = 0.85f * maxHeartRate;
-        
-        System.out.printf("Your maximum heart rate should be %.0f beats per minute.\n", maxHeartRate);
-        System.out.printf("Your target HR Zone is %.0f - %.0f beats per minute.\n", minTargetRate, maxTargetRate);
+        // instantiate new scanner object
+        Scanner sc = new Scanner(System.in);
+
+        // declare variables and initialize if necessary
+        int userAge, maxHeartRate;
+        float minTargetHeartRate, maxTargetHeartRate;
+        String userAgeString;
+
+        // prompt user for age and store in variable
+        System.out.print("What is your age? ");
+        userAgeString = sc.nextLine();
+        userAge = Integer.parseInt(userAgeString);
+
+        // calculate heart rate stats
+        maxHeartRate = 220 - userAge;
+        minTargetHeartRate = 0.5f * maxHeartRate;
+        maxTargetHeartRate = 0.85f * maxHeartRate;
+
+        // print out results to console
+        System.out.println("Your maximum heart rate should be " + maxHeartRate + " beats per minute.");
+        System.out.printf("Your target HR Zone is %.0f - %.0f beats per minute.%n", minTargetHeartRate, maxTargetHeartRate);
     }
-    
+
 }
