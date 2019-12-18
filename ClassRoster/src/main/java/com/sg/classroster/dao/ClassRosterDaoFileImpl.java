@@ -34,7 +34,7 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
     // add new student string as key and Student object as value, return null if 
     // not in HashMap and old Student object if already in HashMap
     @Override
-    public Student addStudent(String studentId, Student student) throws ClassRosterDaoException {
+    public Student addStudent(String studentId, Student student) throws ClassRosterPersistenceException {
         loadRoster();
         Student newStudent = students.put(studentId, student);
         writeRoster();
@@ -43,14 +43,14 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
 
     // get all HashMap Student object values and store them in a new ArrayList, which will be returned
     @Override
-    public List<Student> getAllStudents() throws ClassRosterDaoException {
+    public List<Student> getAllStudents() throws ClassRosterPersistenceException {
         loadRoster();
         return new ArrayList<Student>(students.values());
     }
 
     // get specific Student object from ID
     @Override
-    public Student getStudent(String studentId) throws ClassRosterDaoException {
+    public Student getStudent(String studentId) throws ClassRosterPersistenceException {
         loadRoster();
         return students.get(studentId);
     }
@@ -58,7 +58,7 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
     // remove Student object, if student ID doesn't exist, return null, if Student 
     // object successfully removed, return old Student object
     @Override
-    public Student removeStudent(String studentId) throws ClassRosterDaoException {
+    public Student removeStudent(String studentId) throws ClassRosterPersistenceException {
         loadRoster();
         Student removedStudent = students.remove(studentId);
         writeRoster();
@@ -108,7 +108,7 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
     // do the following: read the line into a string variable, pass the line to our 
     // unmarshallStudent method to parse it into Student, put the Student object into the 
     // student map;; close file
-    private void loadRoster() throws ClassRosterDaoException {
+    private void loadRoster() throws ClassRosterPersistenceException {
         // declare new Scanner object
         Scanner scanner;
 
@@ -117,7 +117,7 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
             // instantiate new Scanner object for reading the file
             scanner = new Scanner(new BufferedReader(new FileReader(ROSTER_FILE)));
         } catch (FileNotFoundException e) {
-            throw new ClassRosterDaoException("-_- Could not load roster data into memory.", e);
+            throw new ClassRosterPersistenceException("-_- Could not load roster data into memory.", e);
         }
 
         // currentLine holds most recent line read from the file
@@ -170,9 +170,9 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
      * Writes all students in the roster out to a ROSTER_FILE. See loadRoster
      * for file format.
      *
-     * @throws ClassRosterDaoException if an error occurs writing to the file
+     * @throws ClassRosterPersistenceException if an error occurs writing to the file
      */
-    private void writeRoster() throws ClassRosterDaoException {
+    private void writeRoster() throws ClassRosterPersistenceException {
         // NOTE FOR APPRENTICES: We are not handling the IOException - but
         // we are translating it to an application specific exception and 
         // then simple throwing it (i.e. 'reporting' it) to the code that
@@ -183,7 +183,7 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
         try {
             out = new PrintWriter(new FileWriter(ROSTER_FILE));
         } catch (IOException e) {
-            throw new ClassRosterDaoException(
+            throw new ClassRosterPersistenceException(
                     "Could not save student data.", e);
         }
 

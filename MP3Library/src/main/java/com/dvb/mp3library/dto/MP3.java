@@ -5,6 +5,8 @@
  */
 package com.dvb.mp3library.dto;
 
+import java.util.Objects;
+
 /**
  *
  * @author Daniel Bart
@@ -73,4 +75,51 @@ public class MP3 {
         this.userRatingNote = userRatingNote;
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 41 * hash + Objects.hashCode(this.title);
+        hash = 41 * hash + Objects.hashCode(this.releaseDate);
+        hash = 41 * hash + Objects.hashCode(this.album);
+        hash = 41 * hash + Objects.hashCode(this.artistName);
+        hash = 41 * hash + Objects.hashCode(this.genre);
+        hash = 41 * hash + Objects.hashCode(this.userRatingNote);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final MP3 other = (MP3) obj;
+        if (!Objects.equals(this.title, other.title)) {
+            return false;
+        }
+        if (!Objects.equals(this.releaseDate, other.releaseDate)) {
+            return false;
+        }
+        if (!Objects.equals(this.album, other.album)) {
+            return false;
+        }
+        if (!Objects.equals(this.artistName, other.artistName)) {
+            return false;
+        }
+        if (!Objects.equals(this.genre, other.genre)) {
+            return false;
+        }
+        if (!Objects.equals(this.userRatingNote, other.userRatingNote)) {
+            return false;
+        }
+        return true;
+    }
+
+    
+    
 }

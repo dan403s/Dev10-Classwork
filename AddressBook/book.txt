@@ -1,2 +1,2 @@
-d::Daniel::4::4::4::4::4
-Hurdur::Billy Bob::99::F::F::F::0
+Rod::Rip::1000::Fast Lane::City::State::0
+Bart::Daniel::403::Sapodilla Ave, Apt 512::West Palm Beach::FL::33401

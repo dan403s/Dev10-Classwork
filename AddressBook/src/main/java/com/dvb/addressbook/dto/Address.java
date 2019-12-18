@@ -5,6 +5,8 @@
  */
 package com.dvb.addressbook.dto;
 
+import java.util.Objects;
+
 /**
  * Data Transfer Object (DTO)
  *
@@ -82,5 +84,56 @@ public class Address {
     public void setZip(int zip) {
         this.zip = zip;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 79 * hash + Objects.hashCode(this.lastName);
+        hash = 79 * hash + Objects.hashCode(this.firstName);
+        hash = 79 * hash + this.streetNumber;
+        hash = 79 * hash + Objects.hashCode(this.streetName);
+        hash = 79 * hash + Objects.hashCode(this.city);
+        hash = 79 * hash + Objects.hashCode(this.state);
+        hash = 79 * hash + this.zip;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Address other = (Address) obj;
+        if (this.streetNumber != other.streetNumber) {
+            return false;
+        }
+        if (this.zip != other.zip) {
+            return false;
+        }
+        if (!Objects.equals(this.lastName, other.lastName)) {
+            return false;
+        }
+        if (!Objects.equals(this.firstName, other.firstName)) {
+            return false;
+        }
+        if (!Objects.equals(this.streetName, other.streetName)) {
+            return false;
+        }
+        if (!Objects.equals(this.city, other.city)) {
+            return false;
+        }
+        if (!Objects.equals(this.state, other.state)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
 
 }

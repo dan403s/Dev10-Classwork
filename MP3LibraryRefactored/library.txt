@@ -1,0 +1,11 @@
+Why Can't This Be Love::1980::Dreams::Van Halen::Rock::Awesome song!
+ :: :: :: :: :: 
+The Funny Song::2019::MyAlbum::Myself::Techno::Terrible song.
+SampleSong::2009::SampleAlbum::SampleArtistName::SampleGenre::AdditionalInformation
+Crazy Train::1975::Crazy Train Album::Black Sabbath::Rock::Awesome song!!!
+12345::1::1::1::1::1
+Highway to Hell::1984::Highway to Hell Album::AC/DC::Rock::Awesome
+The Race::1990::Speed 5.0 Lame::Speed Guy::Pop::This album really sucks.
+Wish You Were Here::1971::Dark Side of the Moon::Pink Floyd::Rock::Great album!
+Jump::1980::Dreams::Van Halen::Rock::Awesome album!
+Dreams::1980::Dreams Album::Van Halen::Rock::Awesome song and album!!!

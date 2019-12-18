@@ -26,7 +26,7 @@ public class AddressBookView {
 
     // MAIN MENU -------------------------------------------------------------------
     // print menu and return user selection as int
-    public int printMenuAndGetSelection() throws IOException {
+    public int printMenuAndGetSelection() {
 
         io.print("Initial Menu: ");
         io.print("1. Add Address");

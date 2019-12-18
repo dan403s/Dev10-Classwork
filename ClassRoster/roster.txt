@@ -1,4 +1,0 @@
-001::1::1::1
-002::Anthony::Bart::Java - Fall/2019
-003::John::Bart::Java - Fall/2019
-007::James::Bond::Java007
