@@ -6,6 +6,8 @@
 package com.dvb.mp3library.ui;
 
 import com.dvb.mp3library.dto.MP3;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 /**
@@ -56,10 +58,10 @@ public class MP3LibraryView {
     }
 
     // prompt user for new MP3 object details and return new MP3 object
-    public MP3 getNewMp3Info() {
+    public MP3 getNewMp3Info() throws UnsupportedReleaseDateFormatException {
         // prompt user for MP3 details
         String title = io.readStringNoBlanks("\nPlease enter title: ");
-        String releaseDate = io.readStringNoBlanks("Please enter release date: ");
+        LocalDate releaseDate = io.readReleaseDate("Please enter release date in format MM/DD/YYYY: ");
         String album = io.readStringNoBlanks("Please enter album: ");
         String artistName = io.readStringNoBlanks("Please enter artist name: ");
         String genre = io.readStringNoBlanks("Please enter genre: ");
@@ -124,10 +126,10 @@ public class MP3LibraryView {
     }
 
     // gets user input for editing of MP3 object
-    public MP3 getEditedMp3Info(String title) {
+    public MP3 getEditedMp3Info(String title) throws UnsupportedReleaseDateFormatException {
 
         // prompt user for MP3 details
-        String releaseDate = io.readStringNoBlanks("\nPlease enter release date: ");
+        LocalDate releaseDate = io.readReleaseDate("\nPlease enter release date in format MM/DD/YYYY: ");
         String album = io.readStringNoBlanks("Please enter album: ");
         String artistName = io.readStringNoBlanks("Please enter artist name: ");
         String genre = io.readStringNoBlanks("Please enter genre: ");
@@ -188,7 +190,7 @@ public class MP3LibraryView {
         // if MP3 object is null, print out message, if not, print out details
         if (mp3 != null) {
             io.print("\nTitle: " + mp3.getTitle());
-            io.print("Release Date: " + mp3.getReleaseDate());
+            io.print("Release Date: " + mp3.getReleaseDate().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")));
             io.print("Album: " + mp3.getAlbum());
             io.print("Artist Name: " + mp3.getArtistName());
             io.print("Genre: " + mp3.getGenre());

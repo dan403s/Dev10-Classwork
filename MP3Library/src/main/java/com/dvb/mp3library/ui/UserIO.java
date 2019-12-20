@@ -5,6 +5,8 @@
  */
 package com.dvb.mp3library.ui;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Daniel Bart
@@ -43,5 +45,8 @@ public interface UserIO {
     
     // prompt user and return response - response cannot be blank ("")
     String readStringNoBlanks(String prompt);
+    
+    // prompt user for releaseDate and return LocalDate object
+    LocalDate readReleaseDate(String prompt) throws UnsupportedReleaseDateFormatException;
 
 }

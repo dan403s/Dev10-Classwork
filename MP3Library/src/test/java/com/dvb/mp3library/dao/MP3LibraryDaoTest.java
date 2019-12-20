@@ -6,6 +6,8 @@
 package com.dvb.mp3library.dao;
 
 import com.dvb.mp3library.dto.MP3;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -51,7 +53,7 @@ public class MP3LibraryDaoTest {
     @Test
     public void testAddListMp3Details() throws Exception {
         MP3 mp3 = new MP3("Dreams");
-        mp3.setReleaseDate("1995");
+        mp3.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp3.setAlbum("Dreams");
         mp3.setArtistName("Van Halen");
         mp3.setGenre("Rock;");
@@ -70,7 +72,7 @@ public class MP3LibraryDaoTest {
     @Test
     public void testDeleteMp3() throws Exception {
         MP3 mp31 = new MP3("Dreams");
-        mp31.setReleaseDate("1995");
+        mp31.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp31.setAlbum("Dreams");
         mp31.setArtistName("Van Halen");
         mp31.setGenre("Rock;");
@@ -79,7 +81,7 @@ public class MP3LibraryDaoTest {
         dao.addMp3(mp31.getTitle(), mp31);
         
         MP3 mp32 = new MP3("Why Can't This Be Love");
-        mp32.setReleaseDate("1995");
+        mp32.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp32.setAlbum("Dreams");
         mp32.setArtistName("Van Halen");
         mp32.setGenre("Rock;");
@@ -103,7 +105,7 @@ public class MP3LibraryDaoTest {
     @Test
     public void testChangeMp3() throws Exception {
         MP3 mp3 = new MP3("Dreams");
-        mp3.setReleaseDate("1995");
+        mp3.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp3.setAlbum("Dreams");
         mp3.setArtistName("Van Halen");
         mp3.setGenre("Rock;");
@@ -112,7 +114,7 @@ public class MP3LibraryDaoTest {
         dao.addMp3(mp3.getTitle(), mp3);
         
         MP3 editedMp3 = new MP3("Dreams");
-        editedMp3.setReleaseDate("2");
+        editedMp3.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         editedMp3.setAlbum("2");
         editedMp3.setArtistName("2");
         editedMp3.setGenre("2;");
@@ -131,7 +133,7 @@ public class MP3LibraryDaoTest {
     @Test
     public void testListAllMp3s() throws Exception {
         MP3 mp31 = new MP3("Dreams");
-        mp31.setReleaseDate("1995");
+        mp31.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp31.setAlbum("Dreams");
         mp31.setArtistName("Van Halen");
         mp31.setGenre("Rock;");
@@ -140,7 +142,7 @@ public class MP3LibraryDaoTest {
         dao.addMp3(mp31.getTitle(), mp31);
         
         MP3 mp32 = new MP3("Why Can't This Be Love");
-        mp32.setReleaseDate("1995");
+        mp32.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp32.setAlbum("Dreams");
         mp32.setArtistName("Van Halen");
         mp32.setGenre("Rock;");
@@ -167,7 +169,7 @@ public class MP3LibraryDaoTest {
     @Test
     public void testSearchLibrary() throws Exception {
         MP3 mp31 = new MP3("Dreams");
-        mp31.setReleaseDate("1995");
+        mp31.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp31.setAlbum("Dreams");
         mp31.setArtistName("Van Halen");
         mp31.setGenre("Rock;");
@@ -176,7 +178,7 @@ public class MP3LibraryDaoTest {
         dao.addMp3(mp31.getTitle(), mp31);
         
         MP3 mp32 = new MP3("Dreaming of You");
-        mp32.setReleaseDate("1995");
+        mp32.setReleaseDate(LocalDate.parse("12/31/1969", DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp32.setAlbum("Dreams");
         mp32.setArtistName("Van Halen");
         mp32.setGenre("Rock;");

@@ -5,6 +5,7 @@
  */
 package com.dvb.mp3library.dto;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 /**
@@ -18,7 +19,7 @@ public class MP3 {
     private String title;
 
     // these variables will have getters and setters both
-    private String releaseDate;
+    private LocalDate releaseDate;
     private String album;
     private String artistName;
     private String genre;
@@ -35,11 +36,11 @@ public class MP3 {
     }
 
     // getters and setters for all other variables
-    public String getReleaseDate() {
+    public LocalDate getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(String releaseDate) {
+    public void setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
     }
 

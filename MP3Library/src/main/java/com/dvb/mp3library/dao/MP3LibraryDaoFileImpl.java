@@ -12,6 +12,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -128,7 +130,7 @@ public class MP3LibraryDaoFileImpl implements MP3LibraryDao {
         MP3 mp3FromFile = new MP3(title);
 
         // use setters to input file text into MP3 object fields
-        mp3FromFile.setReleaseDate(mp3Tokens[1]);
+        mp3FromFile.setReleaseDate(LocalDate.parse(mp3Tokens[1], DateTimeFormatter.ofPattern("MM/dd/yyyy")));
         mp3FromFile.setAlbum(mp3Tokens[2]);
         mp3FromFile.setArtistName(mp3Tokens[3]);
         mp3FromFile.setGenre(mp3Tokens[4]);
@@ -175,7 +177,7 @@ public class MP3LibraryDaoFileImpl implements MP3LibraryDao {
         String mp3AsText = anMp3.getTitle() + DELIMITER;
 
         // get all other variables and convert to string for file insertion
-        mp3AsText += anMp3.getReleaseDate() + DELIMITER;
+        mp3AsText += anMp3.getReleaseDate().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")) + DELIMITER;
         mp3AsText += anMp3.getAlbum() + DELIMITER;
         mp3AsText += anMp3.getArtistName() + DELIMITER;
         mp3AsText += anMp3.getGenre() + DELIMITER;

@@ -5,6 +5,9 @@
  */
 package com.dvb.mp3library.ui;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 /**
@@ -138,15 +141,41 @@ public class UserIOConsoleImpl implements UserIO {
         do {
             System.out.println(prompt);
             responseString = sc.nextLine();
-            if(!responseString.equals("")) {
+            if (!responseString.equals("")) {
                 isValid = true;
             } else {
                 System.out.println("Must type at least one character.");
             }
         } while (!isValid);
-        
 
         return responseString;
+    }
+
+    // prompt user for releaseDate and return LocalDate object
+    @Override
+    public LocalDate readReleaseDate(String prompt) throws UnsupportedReleaseDateFormatException {
+        String responseString;
+        LocalDate localDate = null;
+        boolean isValid = false;
+
+        do {
+            try {
+                try {
+                    System.out.println(prompt);
+                    responseString = sc.nextLine();
+                    localDate = LocalDate.parse(responseString, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+                    isValid = true;
+                } catch (DateTimeParseException e) {
+                    throw new UnsupportedReleaseDateFormatException("ERROR!!! INCORRECT DATE FORMAT!!!", e);
+                }
+            } catch (UnsupportedReleaseDateFormatException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+        } while (!isValid);
+
+        return localDate;
+
     }
 
 }

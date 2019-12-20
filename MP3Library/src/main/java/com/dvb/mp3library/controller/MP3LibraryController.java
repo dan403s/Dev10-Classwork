@@ -9,6 +9,7 @@ import com.dvb.mp3library.dao.MP3LibraryDao;
 import com.dvb.mp3library.dao.MP3LibraryDaoException;
 import com.dvb.mp3library.dto.MP3;
 import com.dvb.mp3library.ui.MP3LibraryView;
+import com.dvb.mp3library.ui.UnsupportedReleaseDateFormatException;
 import java.util.List;
 
 /**
@@ -36,10 +37,11 @@ public class MP3LibraryController {
         boolean keepGoing = true;
         int menuSelection;
 
-        // try-catch for error handling (print out error message if caught)
-        try {
-            // loop through menu choices as long as keepGoing is true
-            while (keepGoing) {
+        // loop through menu choices as long as keepGoing is true
+        while (keepGoing) {
+
+            // try-catch for error handling (print out error message if caught)
+            try {
 
                 // store user selection in menuSelection as int
                 menuSelection = getMenuSelection();
@@ -70,11 +72,12 @@ public class MP3LibraryController {
                     default:
                         unknownCommand();
                 }
-            }
-            exitMessage();
 
-        } catch (MP3LibraryDaoException e) {
-            view.displayErrorMessage(e.getMessage());
+                exitMessage();
+
+            } catch (MP3LibraryDaoException | UnsupportedReleaseDateFormatException e) {
+                view.displayErrorMessage(e.getMessage());
+            }
         }
 
     }
@@ -87,7 +90,7 @@ public class MP3LibraryController {
 
     // ADD MP3 ---------------------------------------------------------------------
     // coordinate add MP3
-    private void createMp3() throws MP3LibraryDaoException {
+    private void createMp3() throws MP3LibraryDaoException, UnsupportedReleaseDateFormatException {
         view.displayAddMp3Banner();
         MP3 createdMp3 = view.getNewMp3Info();
         dao.addMp3(createdMp3.getTitle(), createdMp3);
@@ -116,7 +119,7 @@ public class MP3LibraryController {
 
     // EDIT MP3 --------------------------------------------------------------------
     // coordinate edit MP3
-    private void editMp3() throws MP3LibraryDaoException {
+    private void editMp3() throws MP3LibraryDaoException, UnsupportedReleaseDateFormatException {
         view.displayEditMp3Banner();
         String editTitle = view.getTitleForEditMp3();
         MP3 editMp3 = dao.listMp3Details(editTitle);
