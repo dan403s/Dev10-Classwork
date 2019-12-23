@@ -6,10 +6,11 @@
 package com.dvb.mp3library.ui;
 
 import com.dvb.mp3library.dto.MP3;
-import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -237,20 +238,41 @@ public class MP3LibraryView {
         io.print("\nERROR!!!");
         io.print(errorMsg);
     }
-    
+
     // Find all MP3s released in the last N years ----------------------------------
     public void displayMp3ReleasedInLastNYearsBanner() {
         io.print("\nFind all MP3s released in the last N years menu");
     }
-    
+
     public int getYearsForMp3sReleasedInLastNYears() {
         return io.readInt("Please enter the number of years: ");
     }
-    
+
     // Find all the MP3s in a given genre ------------------------------------------
     // When searching by genre, the MP3s should be sorted into separate data structures by artist.
-    
-    
+    public void displayListMp3ByGenreBanner() {
+        io.print("\nFind all the MP3s in a given genre");
+    }
+
+    public String getGenreForListAllMp3sByGenre() {
+        String name = io.readString("\nPlease enter the genre name: ");
+        return name;
+    }
+
+    public void displayMp3HashMap(Map<String, List<MP3>> hashMap) {
+        if (hashMap != null) {
+            Set<String> artistKeySet = hashMap.keySet();
+            for (String key : artistKeySet) {
+                io.print("\nArtist Name IS: " + key + " =============================");
+                List<MP3> mp3List = hashMap.get(key);
+                displayMp3List(mp3List);
+            }
+        } else {
+            io.print("No such genre...sorrrrrrrry");
+        }
+
+    }
+
     // Find all the MP3s by a given artist -----------------------------------------
     public void displayListMp3sByArtistBanner() {
         io.print("\nFind all the MP3s by a given artist menu");
@@ -260,7 +282,7 @@ public class MP3LibraryView {
         String name = io.readString("\nPlease enter the artist name: ");
         return name;
     }
-    
+
     // Find all the MP3s released on a particular album ----------------------------
     public void displayListMp3sByAlbumBanner() {
         io.print("\nFind all the MP3s on a given album menu");
@@ -270,27 +292,33 @@ public class MP3LibraryView {
         String name = io.readString("\nPlease enter the album name: ");
         return name;
     }
-    
+
     // Find the average age of the MP3s in the collection --------------------------
     public void displayListAverageAgeOfMp3sBanner() {
         io.print("\nFind the average age of the MP3s in the collection menu");
     }
-    
+
     public void displayListAverageAgeOfMp3s(double age) {
         io.print("The average age of the MP3s is " + age + " years.");
     }
-    
+
     // Find the newest MP3 in your collection --------------------------------------
     public void displayListNewestMp3Banner() {
         io.print("\nFind the newest MP3 in your collection menu");
     }
-    
+
     // Find the oldest MP3 in your collection --------------------------------------
     public void displayListOldestMp3Banner() {
         io.print("\nFind the oldest MP3 in your collection menu");
     }
-    
+
     // Find the average number of notes associated with MP3s in your collection ----
-    
-    
+    public void displayListAverageNotesBanner() {
+        io.print("\nFind the average number of notes associated with MP3s in your collection");
+    }
+
+    public void displayListAverageNotes(Double notes) {
+        io.print("\nThe average number of notes per MP3 is " + notes + ".");
+    }
+
 }

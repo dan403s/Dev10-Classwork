@@ -228,7 +228,11 @@ public class MP3LibraryDaoFileImpl implements MP3LibraryDao {
 
     @Override
     public Map<String, List<MP3>> listAllMp3sInGenreByArtist(String genre) throws MP3LibraryDaoException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        loadLibrary();
+        return mp3Map.values()
+                .stream()
+                .filter(m -> m.getGenre().equalsIgnoreCase(genre))
+                .collect(Collectors.groupingBy(m -> m.getArtistName()));
     }
 
     @Override
@@ -279,7 +283,19 @@ public class MP3LibraryDaoFileImpl implements MP3LibraryDao {
 
     @Override
     public double listAverageNumberOfNotesPerMp3() throws MP3LibraryDaoException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        loadLibrary();
+        double totalNotes = mp3Map.values()
+                .stream()
+                .peek(m -> m.getUserRatingNote())
+                .count();
+        
+        double totalEmptyNotes = mp3Map.values()
+                .stream()
+                .filter(m -> m.getUserRatingNote().isBlank())
+                .peek(m -> m.getUserRatingNote())
+                .count();
+        return 1 - (totalEmptyNotes/totalNotes);
+
     }
 
 }

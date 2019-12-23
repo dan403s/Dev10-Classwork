@@ -18,7 +18,7 @@ import java.util.List;
 public class ClassRosterServiceLayerImpl implements ClassRosterServiceLayer {
 
     // dependency injection declaration
-    ClassRosterDao dao;
+    private ClassRosterDao dao;
     private ClassRosterAuditDao auditDao;
 
     // dependency injection through constructor

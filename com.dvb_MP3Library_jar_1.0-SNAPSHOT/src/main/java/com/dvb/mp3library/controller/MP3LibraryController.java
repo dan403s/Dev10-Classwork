@@ -11,6 +11,7 @@ import com.dvb.mp3library.dto.MP3;
 import com.dvb.mp3library.ui.MP3LibraryView;
 import com.dvb.mp3library.ui.UnsupportedIOFormatException;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -208,8 +209,12 @@ public class MP3LibraryController {
 
     // Find all the MP3s in a given genre ------------------------------------------
     // When searching by genre, the MP3s should be sorted into separate data structures by artist.
-    public void listAllMp3sInGenreByArtist() {
-        // NOT YET DANO THE MANO!!!
+    public void listAllMp3sInGenreByArtist() throws MP3LibraryDaoException {
+        view.displayListMp3ByGenreBanner();
+        String genre = view.getGenreForListAllMp3sByGenre();
+        Map<String, List<MP3>> hashMap = dao.listAllMp3sInGenreByArtist(genre);
+        view.displayMp3HashMap(hashMap);
+        view.displayContinueToMenuBanner();
     }
 
     // Find all the MP3s by a given artist -----------------------------------------
@@ -256,7 +261,10 @@ public class MP3LibraryController {
 
     // Find the average number of notes associated with MP3s in your collection ----
     public void listAverageNumberOfNotesPerMp3() throws MP3LibraryDaoException {
-
+        view.displayListAverageNotesBanner();
+        double notes = dao.listAverageNumberOfNotesPerMp3();
+        view.displayListAverageNotes(notes);
+        view.displayContinueToMenuBanner();
     }
 
 }
