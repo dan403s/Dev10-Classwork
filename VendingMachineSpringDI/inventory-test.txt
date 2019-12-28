@@ -1,0 +1,5 @@
+1::Snickers Bar::1.00::10
+2::Doritos::2.00::5
+3::Skittles::1.50::15
+4::Sun Chips::2.50::5
+5::M&Ms::1.25::15

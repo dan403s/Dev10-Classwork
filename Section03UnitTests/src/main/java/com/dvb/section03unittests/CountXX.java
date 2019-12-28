@@ -14,9 +14,9 @@ public class CountXX {
     public int countXX(String str) {
         char[] charArr = str.toCharArray();
         int count = 0;
-        
-        for(int i = 0; i < charArr.length - 1; i++) {
-            if(charArr[i] == 'x' && charArr[i+1] == 'x') {
+
+        for (int i = 0; i < charArr.length - 1; i++) {
+            if (charArr[i] == 'x' && charArr[i + 1] == 'x') {
                 count++;
             }
         }

@@ -1,0 +1,35 @@
+2019-12-27T21:49:11.269031800 : Inventory Accessed.
+2019-12-27T21:49:20.910966 : Change given. Quarters: 0 Dimes: 0 Nickels: 0 Pennies: 0
+2019-12-27T21:49:30.854698100 : Inventory Accessed.
+2019-12-27T21:49:44.014954400 : Total user money was accessed.
+2019-12-27T21:49:58.698047700 : User added $5.69.
+2019-12-27T21:49:58.698047700 : Total user money was accessed.
+2019-12-27T21:50:02.615807300 : Total user money was accessed.
+2019-12-27T21:50:11.766072500 : User added $5.92.
+2019-12-27T21:50:11.766072500 : Total user money was accessed.
+2019-12-27T21:50:11.767065600 : Inventory Accessed.
+2019-12-27T21:50:19.904355300 : Total user money was accessed.
+2019-12-27T21:50:31.062400700 : User added $0.00.
+2019-12-27T21:50:31.062400700 : Total user money was accessed.
+2019-12-27T21:50:40.629417600 : User made a purchase. Item purchased: Doritos.
+2019-12-27T21:50:40.632410700 : Inventory Accessed.
+2019-12-27T21:50:46.338207700 : Total user money was accessed.
+2019-12-27T21:50:48.149970 : User added $0.00.
+2019-12-27T21:50:48.149970 : Total user money was accessed.
+2019-12-27T21:50:51.471645200 : User made a purchase. Item purchased: Doritos.
+2019-12-27T21:50:51.472642800 : Inventory Accessed.
+2019-12-27T21:51:05.654479100 : Total user money was accessed.
+2019-12-27T21:51:13.393427200 : User added $0.00.
+2019-12-27T21:51:13.393427200 : Total user money was accessed.
+2019-12-27T21:51:46.563972700 : Inventory Accessed.
+2019-12-27T21:51:54.299499300 : Total user money was accessed.
+2019-12-27T21:51:57.815690400 : User added $0.00.
+2019-12-27T21:51:57.816703400 : Total user money was accessed.
+2019-12-27T21:51:59.628776900 : User made a purchase. Item purchased: Cookie Dough.
+2019-12-27T21:51:59.628776900 : Inventory Accessed.
+2019-12-27T21:52:00.934140200 : Total user money was accessed.
+2019-12-27T21:52:02.041669900 : User added $0.00.
+2019-12-27T21:52:02.041669900 : Total user money was accessed.
+2019-12-27T21:52:04.658268400 : Total user money was accessed.
+2019-12-27T21:52:04.659265600 : Inventory Accessed.
+2019-12-27T21:52:10.400690300 : Change given. Quarters: 8 Dimes: 1 Nickels: 0 Pennies: 1

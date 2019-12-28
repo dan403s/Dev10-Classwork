@@ -1,0 +1,10 @@
+Why Can't This Be Love::11/30/1987::Dreams::Van Halen::Rock::Great!
+test4::08/15/1985::Dreams::Artist2::Rock::Awesome Song!!!
+test2::08/15/1985::Dreams::Artist2::Rock::Awesome Song!!!
+test3::08/15/1985::Dreams::Artist1::Rock::Awesome Song!!!
+Test title::11/30/1989::Test album::Test Artist Name::Test Genre:: 
+50 Years Ago::12/20/1969::Album::Artist::Oldies::HAHA
+Jump::09/10/1990::Jump Album::Van Halen::Rock::Awesome Album man
+test1::08/15/1985::Dreams::Artist1::Rock::Awesome Song!!!
+Dreams::08/15/1985::Dreams::Van Halen::Rock::Awesome Song!!!
+We Don't Need No Education::11/30/1965::Pink Floyd Album::Pink Flyod::Rock::COOL!

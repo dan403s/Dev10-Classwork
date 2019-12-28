@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.04" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.067" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.5.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Executor\AppData\Local\Temp\surefire12466966240180940914\surefirebooter15891289173216657185.jar C:\Users\Executor\AppData\Local\Temp\surefire12466966240180940914 2019-12-22T20-29-59_298-jvmRun1 surefire13798687081711909657tmp surefire_0507191214427222746tmp"/>
+    <property name="sun.java.command" value="C:\Users\Executor\AppData\Local\Temp\surefire11773043807477144374\surefirebooter16157441871669230502.jar C:\Users\Executor\AppData\Local\Temp\surefire11773043807477144374 2019-12-23T14-27-45_692-jvmRun1 surefire13772810289190118351tmp surefire_04797129810643914493tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Executor\Desktop\public_html\dev10-software-guild-files\Assessments\VendingMachine\target\test-classes;C:\Users\Executor\Desktop\public_html\dev10-software-guild-files\Assessments\VendingMachine\target\classes;C:\Users\Executor\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;C:\Users\Executor\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Executor\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Executor\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\Executor\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.3.1\junit-jupiter-params-5.3.1.jar;C:\Users\Executor\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\Executor\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Executor\AppData\Local\Temp\surefire12466966240180940914\surefirebooter15891289173216657185.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Executor\AppData\Local\Temp\surefire11773043807477144374\surefirebooter16157441871669230502.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.5+10"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testReduceItem" classname="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.028"/>
-  <testcase name="testGetInventory" classname="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.004"/>
-  <testcase name="testGetItem" classname="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.001"/>
+  <testcase name="testReduceItem" classname="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.05"/>
+  <testcase name="testGetInventory" classname="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.005"/>
+  <testcase name="testGetItem" classname="com.dvb.vendingmachine.dao.VendingMachineDaoTest" time="0.002"/>
 </testsuite>

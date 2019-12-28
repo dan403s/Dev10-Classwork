@@ -1,67 +1,42 @@
-2019-12-22T20:28:07.125218900 : Inventory Accessed.
-2019-12-22T20:28:15.117843300 : Total user money was accessed.
-2019-12-22T20:28:21.565469400 : User added $5.69.
-2019-12-22T20:28:21.566462700 : Total user money was accessed.
-2019-12-22T20:28:28.732398800 : User made a purchase. Item purchased: Cookie Dough.
-2019-12-22T20:28:28.734393 : Inventory Accessed.
-2019-12-22T20:29:13.282273200 : Change given. Quarters: 0 Dimes: 1 Nickels: 1 Pennies: 4
-2019-12-22T20:30:10.978333200 : Inventory Accessed.
-2019-12-22T20:30:54.994646400 : Change given. Quarters: 0 Dimes: 0 Nickels: 0 Pennies: 0
-2019-12-22T20:31:00.346122200 : Inventory Accessed.
-2019-12-22T20:31:04.314966300 : Total user money was accessed.
-2019-12-22T20:31:25.654280200 : User added $5.70.
-2019-12-22T20:31:25.654280200 : Total user money was accessed.
-2019-12-22T20:32:02.275750600 : Change given. Quarters: 22 Dimes: 2 Nickels: 0 Pennies: 0
-2019-12-22T20:32:09.477760800 : Inventory Accessed.
-2019-12-22T20:32:10.821623100 : Total user money was accessed.
-2019-12-22T20:32:16.763619700 : User added $5.70.
-2019-12-22T20:32:16.764616900 : Total user money was accessed.
-2019-12-22T20:32:19.178353500 : Total user money was accessed.
-2019-12-22T20:32:27.032464600 : User added $5.70.
-2019-12-22T20:32:27.033461200 : Total user money was accessed.
-2019-12-22T20:32:27.033461200 : Inventory Accessed.
-2019-12-22T20:32:35.091194400 : Total user money was accessed.
-2019-12-22T20:32:37.908697 : User added $0.00.
-2019-12-22T20:32:37.908697 : Total user money was accessed.
-2019-12-22T20:33:03.463931800 : User made a purchase. Item purchased: Cookie Dough.
-2019-12-22T20:33:03.465926200 : Inventory Accessed.
-2019-12-22T20:33:24.490431600 : Change given. Quarters: 23 Dimes: 1 Nickels: 1 Pennies: 0
-2019-12-22T20:33:55.203570900 : Inventory Accessed.
-2019-12-22T20:33:57.897383200 : Total user money was accessed.
-2019-12-22T20:33:59.511250700 : User added $10.00.
-2019-12-22T20:33:59.511250700 : Total user money was accessed.
-2019-12-22T20:34:05.470303700 : User made a purchase. Item purchased: Pear.
-2019-12-22T20:34:05.472298200 : Inventory Accessed.
-2019-12-22T20:34:09.072637200 : Total user money was accessed.
-2019-12-22T20:34:09.979275500 : User added $0.00.
-2019-12-22T20:34:09.979275500 : Total user money was accessed.
-2019-12-22T20:34:13.910160400 : User made a purchase. Item purchased: Pear.
-2019-12-22T20:34:13.911158200 : Inventory Accessed.
-2019-12-22T20:34:21.367351700 : Change given. Quarters: 36 Dimes: 0 Nickels: 0 Pennies: 0
-2019-12-22T20:34:41.932174 : Inventory Accessed.
-2019-12-22T20:34:45.326090 : Total user money was accessed.
-2019-12-22T20:34:46.936090800 : User added $0.00.
-2019-12-22T20:34:46.936090800 : Total user money was accessed.
-2019-12-22T20:34:51.770486200 : Total user money was accessed.
-2019-12-22T20:34:51.770486200 : Inventory Accessed.
-2019-12-22T20:34:56.495778200 : Total user money was accessed.
-2019-12-22T20:34:57.604760600 : User added $10.00.
-2019-12-22T20:34:57.604760600 : Total user money was accessed.
-2019-12-22T20:35:01.432321700 : Inventory Accessed.
-2019-12-22T20:35:05.658456700 : Total user money was accessed.
-2019-12-22T20:35:08.887052700 : User added $0.00.
-2019-12-22T20:35:08.887052700 : Total user money was accessed.
-2019-12-22T20:35:17.452903300 : Change given. Quarters: 40 Dimes: 0 Nickels: 0 Pennies: 0
-2019-12-22T20:35:22.430118 : Inventory Accessed.
-2019-12-22T20:35:23.919733700 : Total user money was accessed.
-2019-12-22T20:35:26.642315 : User added $10.00.
-2019-12-22T20:35:26.642315 : Total user money was accessed.
-2019-12-22T20:35:32.590744300 : Inventory Accessed.
-2019-12-22T20:35:35.600416900 : Total user money was accessed.
-2019-12-22T20:35:41.039311800 : User added $5.00.
-2019-12-22T20:35:41.039311800 : Total user money was accessed.
-2019-12-22T20:35:47.182384300 : Inventory Accessed.
-2019-12-22T20:35:50.309965900 : Total user money was accessed.
-2019-12-22T20:35:52.525243100 : User added $0.00.
-2019-12-22T20:35:52.525243100 : Total user money was accessed.
-2019-12-22T20:35:54.145690200 : Change given. Quarters: 60 Dimes: 0 Nickels: 0 Pennies: 0
+2019-12-23T14:22:32.297516800 : Inventory Accessed.
+2019-12-23T14:22:40.315822500 : Change given. Quarters: 0 Dimes: 0 Nickels: 0 Pennies: 0
+2019-12-23T14:22:46.585196500 : Inventory Accessed.
+2019-12-23T14:22:56.300576500 : Total user money was accessed.
+2019-12-23T14:23:20.159840200 : User added $10.00.
+2019-12-23T14:23:20.160839100 : Total user money was accessed.
+2019-12-23T14:23:52.359274200 : Total user money was accessed.
+2019-12-23T14:24:16.329939500 : User added $5.00.
+2019-12-23T14:24:16.330333500 : Total user money was accessed.
+2019-12-23T14:24:16.330333500 : Inventory Accessed.
+2019-12-23T14:24:58.008693800 : Change given. Quarters: 60 Dimes: 0 Nickels: 0 Pennies: 0
+2019-12-23T14:25:04.054050700 : Inventory Accessed.
+2019-12-23T14:25:05.670687400 : Total user money was accessed.
+2019-12-23T14:25:08.594850800 : User added $3.00.
+2019-12-23T14:25:08.594850800 : Total user money was accessed.
+2019-12-23T14:25:10.706161800 : Total user money was accessed.
+2019-12-23T14:25:41.825054500 : User added $3.00.
+2019-12-23T14:25:41.825756500 : Total user money was accessed.
+2019-12-23T14:25:41.825756500 : Inventory Accessed.
+2019-12-23T14:25:49.988628 : Total user money was accessed.
+2019-12-23T14:25:52.605841700 : User added $10.00.
+2019-12-23T14:25:52.605841700 : Total user money was accessed.
+2019-12-23T14:26:46.803814100 : User made a purchase. Item purchased: Cookie Dough.
+2019-12-23T14:26:46.807802800 : Inventory Accessed.
+2019-12-23T14:26:59.467843600 : Total user money was accessed.
+2019-12-23T14:27:00.976614600 : User added $0.00.
+2019-12-23T14:27:00.976614600 : Total user money was accessed.
+2019-12-23T14:27:03.897776 : User made a purchase. Item purchased: Cookie Dough.
+2019-12-23T14:27:03.898773300 : Inventory Accessed.
+2019-12-23T14:27:25.853565800 : Change given. Quarters: 20 Dimes: 0 Nickels: 0 Pennies: 0
+2019-12-23T14:27:55.213956400 : Inventory Accessed.
+2019-12-23T14:28:08.024515 : Total user money was accessed.
+2019-12-23T14:28:13.763797500 : User added $4.70.
+2019-12-23T14:28:13.764794700 : Total user money was accessed.
+2019-12-23T14:28:16.478830 : Total user money was accessed.
+2019-12-23T14:28:28.060161600 : User added $0.00.
+2019-12-23T14:28:28.060161600 : Total user money was accessed.
+2019-12-23T14:28:28.061124200 : Inventory Accessed.
+2019-12-23T14:29:03.077845 : Total user money was accessed.
+2019-12-23T14:29:06.697846900 : User added $3.99.
+2019-12-23T14:29:06.698844100 : Total user money was accessed.
+2019-12-23T14:29:10.332541500 : Change given. Quarters: 34 Dimes: 1 Nickels: 1 Pennies: 4

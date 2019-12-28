@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/mvc
+          http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/aop  
+          http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <!-- Bean definitions go here -->
+    <!-- 
+        UserIO myIo = new UserIOConsoleImpl();
+        MP3LibraryView myView = new MP3LibraryView(myIo);
+        MP3LibraryDao myDao = new MP3LibraryDaoFileImpl();
+        MP3LibraryController controller = new MP3LibraryController(myView, myDao);
+    -->
+    
+    <bean id="userIO" class="com.dvb.mp3library.ui.UserIOConsoleImpl"/>
+    
+    <bean id="view" class="com.dvb.mp3library.ui.MP3LibraryView">
+        <constructor-arg ref="userIO"/>
+    </bean>
+    
+    <bean id="mp3LibraryDao" class="com.dvb.mp3library.dao.MP3LibraryDaoFileImpl"/>
+    
+    <bean id="controller" class="com.dvb.mp3library.controller.MP3LibraryController">
+        <constructor-arg ref="view"/>
+        <constructor-arg ref="mp3LibraryDao"/>
+    </bean>
+   
+</beans>
