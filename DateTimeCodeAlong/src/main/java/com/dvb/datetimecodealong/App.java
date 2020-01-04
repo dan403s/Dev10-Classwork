@@ -46,10 +46,12 @@ public class App {
         
         // formatting and printing dates
         // print LocalDate in MM/dd/yyyy
+        System.out.println("+________________________________________");
         String formatted = ld.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
         System.out.println(formatted);
         // convert back to ISO format
         ld = LocalDate.parse(formatted, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        System.out.println("HAHAHAHAHA");
         System.out.println(ld);
         // pattern can be anything we need
         formatted = ld.format(DateTimeFormatter.ofPattern("MM=dd=yyyy+=+=+=+="));

@@ -1,0 +1,96 @@
+2020-01-04T14:28:13.309553 : Mode Selected: prod.
+2020-01-04T14:28:26.293636600 : Retrieved all orders.
+2020-01-04T14:28:37.756619600 : Retrieved Set of product types.
+2020-01-04T14:28:37.758639100 : Retrieved Set of states.
+2020-01-04T14:28:41.876129700 : Could not validate state: 11/30/2022.
+2020-01-04T14:29:01.334886400 : Mode Selected: prod.
+2020-01-04T14:29:08.987293500 : Retrieved orders with date of 11/30/2022.
+2020-01-04T14:29:17.824101500 : Retrieved orders with date of 01/01/2025.
+2020-01-04T14:29:26.883998700 : Retrieved Set of product types.
+2020-01-04T14:29:26.885931500 : Retrieved Set of states.
+2020-01-04T14:29:33.621813 : Could not validate state: mn.
+2020-01-04T14:29:36.637313300 : Validated state: oh.
+2020-01-04T14:29:40.670050500 : Validated product type: carpet.
+2020-01-04T14:30:08.423035700 : Validated state: oh.
+2020-01-04T14:30:08.423993300 : Validated product type: carpet.
+2020-01-04T14:30:08.427982900 : Calculated costs for order number: 01/04/2020:02:29:40.
+2020-01-04T14:30:08.434964200 : Added new order with order number: 01/04/2020:02:29:40.
+2020-01-04T14:31:36.934705300 : Tried to retrieve order, but no order exists with order number: 01/01/2001:01:01:01.
+2020-01-04T14:31:38.942934600 : Retrieved Set of product types.
+2020-01-04T14:31:38.943599200 : Retrieved Set of states.
+2020-01-04T14:31:41.761269900 : Validated state: pa.
+2020-01-04T14:31:43.569953700 : Validated product type: laminate.
+2020-01-04T14:31:57.852280900 : Validated state: pa.
+2020-01-04T14:31:57.852280900 : Validated product type: laminate.
+2020-01-04T14:31:57.854275500 : Calculated costs for order number: 01/04/2020:02:31:43.
+2020-01-04T14:31:57.858262800 : Added new order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:32:57.391000700 : Retrieved Set of product types.
+2020-01-04T14:32:57.395933 : Retrieved Set of states.
+2020-01-04T14:32:59.603482900 : Validated state: mi.
+2020-01-04T14:33:01.129625400 : Validated product type: tile.
+2020-01-04T14:33:10.879885500 : Validated state: mi.
+2020-01-04T14:33:10.879885500 : Validated product type: tile.
+2020-01-04T14:33:10.881877500 : Calculated costs for order number: 01/04/2020:02:33:01.
+2020-01-04T14:33:10.885867100 : Added new order with order number: 01/04/2020:02:33:01.
+2020-01-04T14:34:03.491452500 : Retrieved Set of product types.
+2020-01-04T14:34:03.492451400 : Retrieved Set of states.
+2020-01-04T14:34:06.310592100 : Could not validate state: pla.
+2020-01-04T14:34:08.419475 : Could not validate state: pas.
+2020-01-04T14:34:10.532574 : Could not validate state: pos.
+2020-01-04T14:34:12.443540 : Validated state: in.
+2020-01-04T14:34:14.856074400 : Could not validate product type: wooood.
+2020-01-04T14:34:16.966069200 : Validated product type: wood.
+2020-01-04T14:34:32.153116800 : Retrieved Set of product types.
+2020-01-04T14:34:32.154115100 : Retrieved Set of states.
+2020-01-04T14:34:34.163922500 : Validated state: in.
+2020-01-04T14:34:35.168222800 : Validated product type: wood.
+2020-01-04T14:34:45.628734400 : Validated state: in.
+2020-01-04T14:34:45.628734400 : Validated product type: wood.
+2020-01-04T14:34:45.630732200 : Calculated costs for order number: 01/04/2020:02:34:35.
+2020-01-04T14:34:45.634735200 : Added new order with order number: 01/04/2020:02:34:35.
+2020-01-04T14:35:48.594245600 : Retrieved all orders.
+2020-01-04T14:36:02.375757 : Retrieved orders with date of 01/04/2020.
+2020-01-04T14:36:44.514238700 : Retrieved all orders.
+2020-01-04T14:36:52.555385500 : Retrieved orders with date of 01/04/2020.
+2020-01-04T14:39:24.123821200 : Retrieved order with order number: 01/04/2020:02:29:40.
+2020-01-04T14:39:24.123821200 : Retrieved Set of product types.
+2020-01-04T14:39:24.124819400 : Retrieved Set of states.
+2020-01-04T14:39:28.145178300 : Validated state: mi.
+2020-01-04T14:39:31.161680200 : Validated product type: laminate.
+2020-01-04T14:39:42.129875100 : Validated state: mi.
+2020-01-04T14:39:42.130846200 : Validated product type: laminate.
+2020-01-04T14:39:42.132841700 : Calculated costs for order number: 01/04/2020:02:29:40.
+2020-01-04T14:39:42.135831600 : Edited order with order number: 01/04/2020:02:29:40.
+2020-01-04T14:40:34.533547400 : Retrieved order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:40:34.533547400 : Retrieved Set of product types.
+2020-01-04T14:40:34.534910600 : Retrieved Set of states.
+2020-01-04T14:40:37.148688 : Could not validate state: mn.
+2020-01-04T14:40:40.569484400 : Validated state: in.
+2020-01-04T14:40:42.277869800 : Could not validate product type: wooood.
+2020-01-04T14:40:44.489499900 : Validated product type: wood.
+2020-01-04T14:40:51.027057200 : Validated state: in.
+2020-01-04T14:40:51.028054500 : Validated product type: wood.
+2020-01-04T14:40:51.029050100 : Calculated costs for order number: 01/04/2020:02:31:43.
+2020-01-04T14:40:51.034036100 : Edited order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:41:48.159544300 : Retrieved order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:41:48.160540100 : Retrieved Set of product types.
+2020-01-04T14:41:48.160540100 : Retrieved Set of states.
+2020-01-04T14:41:50.775626300 : Validated state: pa.
+2020-01-04T14:41:52.084183900 : Validated product type: tile.
+2020-01-04T14:41:58.420599800 : Validated state: pa.
+2020-01-04T14:41:58.421596600 : Validated product type: tile.
+2020-01-04T14:41:58.422596500 : Calculated costs for order number: 01/04/2020:02:31:43.
+2020-01-04T14:41:58.424590900 : Edited order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:43:05.202697200 : Retrieved all orders.
+2020-01-04T14:43:33.668300100 : Retrieved orders with date of 01/04/2020.
+2020-01-04T14:46:08.585870900 : Retrieved order with order number: 01/04/2020:02:29:40.
+2020-01-04T14:46:10.195673800 : Removed order with order number: 01/04/2020:02:29:40.
+2020-01-04T14:46:17.337746200 : Retrieved order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:46:22.266327400 : Removed order with order number: 01/04/2020:02:31:43.
+2020-01-04T14:46:28.802525400 : Retrieved order with order number: 01/04/2020:02:33:01.
+2020-01-04T14:46:37.152940 : Retrieved order with order number: 01/04/2020:02:34:35.
+2020-01-04T14:46:50.441297500 : Retrieved all orders.
+2020-01-04T14:47:01.398716300 : Retrieved orders with date of 01/04/2020.
+2020-01-04T14:48:49.796808500 : Mode Selected: prod.
+2020-01-04T14:48:55.231784100 : Retrieved orders with date of 01/04/2020.
+2020-01-04T14:49:02.461087700 : Retrieved all orders.
