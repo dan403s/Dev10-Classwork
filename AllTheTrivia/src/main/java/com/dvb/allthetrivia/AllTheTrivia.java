@@ -31,4 +31,5 @@ public class AllTheTrivia {
         System.out.println(element + " is the only planet that rotates clockwise, neat!");
     }
     
+    
 }
