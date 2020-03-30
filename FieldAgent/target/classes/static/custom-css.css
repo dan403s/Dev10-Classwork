@@ -1,0 +1,66 @@
+.h2-and-add-field-agent-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+}
+
+#home-table td:nth-child(3) {
+  width: 8%;
+  padding-right: 0px;
+}
+
+#home-table td:nth-child(4) {
+  padding-left: 0px;
+}
+
+.add-field-agent-h2, .field-agent-h2, .assignment-h2 {
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+
+.delete-field-agent-outer-container {
+  padding: 20px 20px 20px 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+#field-agent-form-and-table-container, #assignment-form-container, #add-field-agent-form {
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+
+#field-agent-form-and-table-container img {
+  width: 100%;
+}
+
+.validation-errors {
+  width: 100%;
+}
+
+/* Media Queries ---------------------------------- */
+@media screen and (max-width:1199px) {
+
+  
+
+}
+
+@media screen and (max-width:991px) {
+
+
+
+}
+
+@media screen and (max-width:767px) {
+
+
+
+}
+
+@media screen and (max-width:575px) {
+
+  
+
+}

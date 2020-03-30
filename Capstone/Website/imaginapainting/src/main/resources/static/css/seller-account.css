@@ -1,0 +1,655 @@
+.seller-account-page-outer-container {
+  /* FIX NAVBAR OVERLAP */
+  margin-top: 86px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.seller-account-page-left-container {
+  width: 250px;
+  float: left;
+  background-color: rgb(0, 83, 143);
+  height: 100%;
+}
+
+.seller-account-page-inner-left-container {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+  background-color: #ffffff;
+}
+
+.seller-account-page-inner-left-container button {
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+}
+
+.seller-account-page-right-container {
+  width: calc(100% - 250px);
+  float: right;
+  background-color: rgba(196, 196, 196, 0.377);
+}
+
+.seller-account-page-inner-right-container h2 {
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+#sellerAccountPageListArtworkSection {
+  padding: 0px 20px 0px 20px;
+}
+
+.seller-account-page-list-artwork-section-add-item-button-div {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+}
+
+.seller-account-page-right-inner-container-list-artwork {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+}
+
+.seller-account-page-right-inner-list-artwork-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seller-account-page-right-inner-list-artwork-summary-text-block {
+  width: 33.33333%;
+}
+
+.seller-account-page-right-inner-container-list-artwork a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.seller-account-page-right-inner-container-list-artwork a:hover {
+  color: #2190E1;
+}
+
+.seller-account-page-right-inner-list-artwork-details-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.seller-account-page-list-artwork-image-div {
+  width: 225px;
+}
+
+.seller-account-page-list-artwork-image-div img {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  display: block;
+  max-width: 225px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+.seller-account-page-list-artwork-text-div {
+  width: 365px;
+  padding: 20px 20px 20px 20px;
+  margin: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seller-account-page-list-artwork-text-div h4 {
+  margin: 5px 0px 5px 0px;
+}
+
+.seller-account-page-list-artwork-text-div p {
+  margin: 5px 0px 5px 0px;
+}
+
+.seller-account-page-list-artwork-text-div a {
+  width: 100%;
+}
+
+.seller-account-page-list-artwork-button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.seller-account-page-list-artwork-button-div button {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.seller-account-page-list-artwork-page-selector-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 20px 20px 20px 20px;
+}
+
+.seller-account-page-list-artwork-page-selector-container a {
+  color: inherit;
+}
+
+.seller-account-page-list-artwork-page-selector-container a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#sellerAccountPageListArtworkPageSelectorUl {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#sellerAccountPageViewSoldOrdersPageSelectorUl {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.button-disabled {
+  color: #888;
+  border: none;
+}
+
+.button-disabled:hover {
+  color: #888;
+  border: none;
+  background-color: none;
+  cursor: default;
+}
+
+.button-disabled:hover a {
+  color: #888;
+  border: none;
+  background-color: none;
+}
+
+#sellerAccountPagePublicProfileDetailsSection {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 20px 20px 20px;
+  justify-content: space-between;
+}
+
+#sellerAccountPagePublicProfileDetailsSection h2 {
+  width: 100%;
+}
+
+.seller-account-page-public-profile-details-section-image-div {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 20px 15px 20px 15px;
+  margin: 0px 0px 0px 0px;
+  background-color: #ffffff;
+}
+
+#sellerAccountPagePublicProfileDetailsImage {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+.seller-account-page-public-profile-details-image-form-container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 10px);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 15px 15px 15px 15px;
+  margin: 0px 0px 0px 0px;
+  background-color: #ffffff;
+}
+
+#sellerAccountPagePublicProfileDetailsImageForm {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sellerAccountPagePublicProfileDetailsImageForm .form-group {
+  margin: 0px 0px 0px 0px;
+}
+
+.seller-account-page-public-profile-details-form-container {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0px 0px 0px;
+  background-color: #ffffff;
+}
+
+#sellerAccountPagePublicProfileDetailsForm {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sellerAccountPagePublicProfileDetailsForm>div {
+  width: 50%;
+  margin: 10px 0px 10px 0px;
+}
+
+#sellerAccountPagePublicProfileDetailsForm>div:nth-child(3) {
+  width: 100%;
+}
+
+#sellerAccountPagePublicProfileDetailsForm input {
+  width: 300px;
+}
+
+#sellerAccountPagePublicProfileDetailsForm textarea {
+  width: 695px;
+}
+
+
+#sellerAccountPagePublicProfileDetailsForm hr {
+  width: 100%;
+}
+
+#sellerAccountPagePublicProfileDetailsForm button {
+  margin: 0px 0px 0px 5px;
+}
+
+#sellerAccountPagePublicProfileDetailsSaveButtonDiv {
+  text-align: center;
+  width: 100% !important;
+}
+
+#sellerAccountPageAccountDetailsSection {
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#sellerAccountPageAccountDetailsSection h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.seller-account-page-account-details-form-container {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  margin: 0px 0px 0px 0px;
+  background-color: #ffffff;
+}
+
+#sellerAccountPageInnerRightContainerErrorMessages {
+  width: 100%;
+}
+
+#sellerAccountPageAccountDetailsForm {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sellerAccountPageAccountDetailsForm>div {
+  width: 50%;
+  margin: 10px 0px 10px 0px;
+}
+
+#sellerAccountPageAccountDetailsForm input {
+  width: 300px;
+}
+
+#sellerAccountPageAccountDetailsForm select {
+  width: 300px;
+}
+
+#sellerAccountPageAccountDetailsForm hr {
+  width: 100%;
+}
+
+#sellerAccountPageAccountDetailsForm button {
+  margin: 0px 0px 0px 5px;
+}
+
+#sellerAccountPageAccountDetailsEditPasswordButton {
+  margin: 0px 0px 0px 0px !important;
+}
+
+#sellerAccountPageAccountDetailsSaveButtonDiv,
+#sellerAccountPageAccountDetailsDeleteAccountButtonDiv {
+  text-align: center;
+  width: 100% !important;
+}
+
+#sellerAccountPageAccountDetailsEditPasswordModal {}
+
+.readonly {
+  background-color: #d1d1d1;
+  pointer-events: none;
+}
+
+.readonly:focus {
+  background-color: #d1d1d1;
+}
+
+#sellerAccountPageListArtworkSectionAddItemPrice::-webkit-outer-spin-button,
+#sellerAccountPageListArtworkSectionAddItemPrice::-webkit-inner-spin-button,
+#sellerAccountPageListArtworkSectionAddItemQuantity::-webkit-inner-spin-button,
+#sellerAccountPageListArtworkSectionAddItemQuantity::-webkit-inner-spin-button,
+#sellerAccountPageListArtworkSectionEditItemPrice::-webkit-inner-spin-button,
+#sellerAccountPageListArtworkSectionEditItemPrice::-webkit-inner-spin-button,
+#sellerAccountPageListArtworkSectionEditItemQuantity::-webkit-inner-spin-button,
+#sellerAccountPageListArtworkSectionEditItemQuantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#sellerAccountPageListArtworkSectionAddItemPrice[type=number],
+#sellerAccountPageListArtworkSectionAddItemQuantity[type=number],
+#sellerAccountPageListArtworkSectionEditItemPrice[type=number],
+#sellerAccountPageListArtworkSectionEditItemQuantity[type=number] {
+  -moz-appearance: textfield;
+}
+
+#sellerAccountPageListArtworkSectionAddItemPhoto, #sellerAccountPageListArtworkSectionEditItemPhoto {
+  margin-bottom: 20px;
+}
+
+#sellerAccountPageViewSoldOrdersSection {
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#sellerAccountPageViewSoldOrdersSection h2 {
+  text-align: center;
+  width: 100%;
+}
+
+#sellerAccountPageViewSoldOrdersSectionDiv {
+  width: 100%;
+}
+
+#sellerAccountStatus {
+  animation: accountStatusText 1s infinite;
+}
+
+@keyframes accountStatusText {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+
+  50% {
+    color: #000;
+  }
+
+  100% {
+    color: rgb(245, 0, 0);
+  }
+}
+
+/* Media Queries ---------------------------------- */
+@media screen and (max-width:1199px) {
+
+  .seller-account-page-list-artwork-page-selector-container {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  #sellerAccountPageListArtworkPageSelectorUl {
+    padding: 0px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-wrap: wrap;
+  }
+
+  #sellerAccountPageViewSoldOrdersPageSelectorUl {
+    padding: 0px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-wrap: wrap;
+  }
+
+
+  #sellerAccountPageListArtworkPageSelectorUl li {
+    margin: 10px 2px 0px 2px;
+  }
+
+  #sellerAccountPageViewSoldOrdersPageSelectorUl li {
+    margin: 10px 2px 0px 2px;
+  }
+
+  #sellerAccountPageAccountDetailsForm button {
+    margin: 5px 0px 0px 0px;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm button {
+    margin: 5px 0px 0px 0px;
+  }
+
+}
+
+@media screen and (max-width:991px) {
+
+  .seller-account-page-right-inner-container-list-artwork {
+    padding: 15px 15px 15px 15px;
+  }
+
+  .seller-account-page-right-inner-list-artwork-summary-text-block {
+    width: 50%;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .seller-account-page-list-artwork-image-div {
+    width: 100%;
+  }
+
+  .seller-account-page-list-artwork-image-div img {
+    max-width: 100%;
+  }
+
+  .seller-account-page-list-artwork-text-div {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+
+  #sellerAccountPageAccountDetailsForm>div {
+    width: 100%;
+  }
+
+  #sellerAccountPageAccountDetailsForm button {
+    margin: 0px 0px 0px 5px;
+  }
+
+  .seller-account-page-public-profile-details-section-image-div {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .seller-account-page-public-profile-details-image-form-container {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+  }
+
+  #sellerAccountPagePublicProfileDetailsImage {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }
+
+  #sellerAccountPagePublicProfileDetailsImageForm {
+    justify-content: left;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm>div {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm textarea {
+    width: 300px;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm button {
+    margin: 0px 0px 0px 5px;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+
+  .seller-account-page-left-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .seller-account-page-right-container {
+    width: 100%;
+    float: left;
+  }
+
+  .seller-account-page-right-inner-list-artwork-summary-text-block {
+    width: 50%;
+  }
+
+  .seller-account-page-list-artwork-text-div {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .seller-account-page-list-artwork-page-selector-container {
+    padding: 10px 20px 20px 20px;
+  }
+
+  #sellerAccountPageAccountDetailsForm>div {
+    width: 100%;
+  }
+
+  #sellerAccountPageAccountDetailsForm input {
+    width: 380px;
+  }
+
+  #sellerAccountPageAccountDetailsForm select {
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width:575px) {
+
+  .seller-account-page-right-inner-list-artwork-summary-text-block {
+    width: 100%;
+  }
+
+  #sellerAccountPageAccountDetailsForm input {
+    width: 100%
+  }
+
+  #sellerAccountPageAccountDetailsForm select {
+    width: 100%
+  }
+
+  #sellerAccountPageAccountDetailsForm button {
+    margin: 5px 0px 0px 0px;
+  }
+  
+  #sellerAccountPagePublicProfileDetailsImage {
+    max-width: 230px;
+    max-height: 200px;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm>div {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm input {
+    width: 100%;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm textarea {
+    width: 100%;
+  }
+
+  #sellerAccountPagePublicProfileDetailsForm button {
+    margin: 5px 0px 0px 0px;
+  }
+
+}

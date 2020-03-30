@@ -17,7 +17,7 @@ public class TraditionalFizzBuzz {
         int userNumber;
         int fizzCount = 0;
         int buzzCount = 0;
-        int fizzAndBuzzCount = 0;
+        int allCount = 0;
         int fizzBuzzCount = 0;
 
         Scanner sc = new Scanner(System.in);
@@ -29,21 +29,21 @@ public class TraditionalFizzBuzz {
         for (int i = 0; true; i++) {
             if (i != 0 && i % 3 == 0 && i % 5 == 0) {
                 System.out.println("fizz buzz");
-                fizzAndBuzzCount++;
+                allCount++;
                 fizzBuzzCount++;
             } else if (i != 0 && i % 3 == 0) {
                 System.out.println("fizz");
                 fizzCount++;
-                fizzAndBuzzCount++;
+                allCount++;
             } else if (i != 0 && i % 5 == 0) {
                 System.out.println("buzz");
                 buzzCount++;
-                fizzAndBuzzCount++;
+                allCount++;
             } else {
                 System.out.println(i);
             }
 
-            if (fizzAndBuzzCount == userNumber) {
+            if (allCount == userNumber) {
                 break;
             }
         }

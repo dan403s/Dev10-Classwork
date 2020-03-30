@@ -1,0 +1,30 @@
+#headerDiv {
+  padding: 35px 0px 0px 0px;
+  width: 100%;
+}
+
+#resultsTableDiv {
+  width: 100%;
+}
+
+#searchButton,
+#searchCategory {
+  float: right;
+}
+
+#editFormDiv label {
+  justify-content: left;
+}
+
+#editRating, #createRating {
+  margin-left: 15px;
+}
+
+#defaultErrorMessagesDiv,
+#defaultErrorMessagesDiv,
+#editErrorMessagesDiv,
+#createErrorMessagesDiv,
+#viewErrorMessagesDiv {
+  margin-bottom: 10px;
+  width: 100%;
+}

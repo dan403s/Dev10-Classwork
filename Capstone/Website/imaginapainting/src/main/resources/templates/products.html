@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Imaginapainting</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="_csrf" th:content="${_csrf.token}"/>
+  <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Open Iconic CSS -->
+  <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <!-- Dynamic Banner CSS -->
+  <link href="css/dynamic-banner.css" rel="stylesheet">
+  <!-- Home Page Art Cards CSS -->
+  <link href="css/art-cards-most-popular.css" rel="stylesheet">
+  <!-- CTA Section -->
+  <link href="css/cta.css" rel="stylesheet">
+  <!-- Navbar Scroll -->
+  <link href="css/navbar-scroll.css" rel="stylesheet">
+  <!-- Buyer Registration CSS -->
+  <link href="css/buyer-registration.css" rel="stylesheet">
+  <!-- Seller Registration CSS -->
+  <link href="css/seller-registration.css" rel="stylesheet">
+  <!-- Order Failed CSS -->
+  <link href="css/order-failed.css" rel="stylesheet">
+  <!-- Order Success CSS -->
+  <link href="css/order-success.css" rel="stylesheet">
+  <!-- Products Page CSS -->
+  <link href="css/products-page.css" rel="stylesheet">
+  <!-- Buyer Account Page CSS -->
+  <link href="css/buyer-account.css" rel="stylesheet">
+  <!-- Seller Account Page CSS -->
+  <link href="css/seller-account.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- HTML HERE -->
+  <div class="container-fluid">
+    <main>
+
+      <!-- Navbar goes here -->
+      <div id="navbar-background" class="row fixed-top">
+        <div class="container">
+          <div class="row navbar-row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-xl">
+                <a class="navbar-brand" href="index">LOGO GOES HERE</a>
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item nav-item-padding">
+                      <a class="nav-link" href="#">Join</a>
+                    </li> -->
+                    <li class="nav-item dropdown" sec:authorize="!isAuthenticated()">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Join
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="buyer-registration">Buyer Registration</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="seller-registration">Seller Registration</a>
+                      </div>
+                    </li>
+                    <li class="nav-item nav-item-padding">
+                      <a class="nav-link" href="user-login"><span sec:authorize="!isAuthenticated()">Login</span><span sec:authorize="isAuthenticated()">My Account</span></a>
+                    </li>
+                    <li class="nav-item nav-item-padding">
+                      <a class="nav-link" href="products">Products</a>
+                    </li>
+                  </ul>
+                  <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0 custom-dark-button" type="submit">Search</button>
+                  </form> -->
+                  <ul class="navbar-nav" sec:authorize="hasRole('BUYER')">
+                    <li id="cart-icon-li" class="nav-item">
+                      <a class="nav-link" href="cart">CART <span class="oi oi-cart"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="products-page-outer-container">
+          <div class="products-page-left-container">
+            <form id="productsPageLeftSearchForm" class="form-check">
+              <!-- Checkbox Group For Categories -->
+              <div class="products-page-selection-form-container">
+                <h4 class="font-h4">Category</h4>
+
+                <select class="form-control" id="category" name="category">
+                  <option></option>
+                  <option th:each="category : ${categories}" th:value="${category.categoryId}"
+                    th:text="${category.name}"></option>
+                </select>
+              </div>
+
+              <!-- Checkbox Group For Styles -->
+              <div class="products-page-selection-form-container">
+                <h4 class="font-h4">Style</h4>
+
+                <select class="form-control" id="style" name="style">
+                  <option></option>
+                  <option th:each="style : ${styles}" th:value="${style.styleId}" th:text="${style.name}"></option>
+                </select>
+              </div>
+
+              <!-- Checkbox Group For Subjects -->
+              <div class="products-page-selection-form-container">
+                <h4 class="font-h4">Subject</h4>
+
+                <select class="form-control" id="subject" name="subject">
+                  <option></option>
+                  <option th:each="subject : ${subjects}" th:value="${subject.subjectId}" th:text="${subject.name}">
+                  </option>
+                </select>
+              </div>
+
+              <!-- Checkbox Group For Mediums -->
+              <div class="products-page-selection-form-container">
+                <h4 class="font-h4">Medium</h4>
+
+                <select class="form-control" id="medium" name="medium">
+                  <option></option>
+                  <option th:each="medium : ${mediums}" th:value="${medium.mediumId}" th:text="${medium.name}"></option>
+                </select>
+              </div>
+
+              <!-- Checkbox Group For Materials -->
+              <div class="products-page-selection-form-container">
+                <h4 class="font-h4">Material</h4>
+
+                <select class="form-control" id="material" name="material">
+                  <option></option>
+                  <option th:each="material : ${materials}" th:value="${material.materialId}"
+                    th:text="${material.name}"></option>
+                </select>
+              </div>
+
+              <!-- Form Group For Price -->
+              <div class="products-page-selection-form-container">
+                <h4 class="font-h4">Price</h4>
+                <ul class="list-group" id="selectPriceFormErrorMessages">
+                  <!-- dynamically generate any error messages -->
+                </ul>
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <label class="sr-only" for="selectPriceMin">Min Price</label>
+                    <input type="number" class="form-control mb-2" name="selectPriceMin" id="selectPriceMin"
+                      placeholder="Min Price" min="0" max="99999999" required>
+                  </div>
+
+                  <div class="col-auto">
+                    <label class="sr-only" for="selectPriceMax">Max Price</label>
+                    <input type="number" class="form-control mb-2" name="selectPriceMax" id="selectPriceMax"
+                      placeholder="Max Price" min="0" max="99999999" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products-page-selection-form-container">
+                <button type="button" id="productsPageLeftSearchFormButton"
+                  class="btn btn-outline-dark custom-dark-button">Search</button>
+              </div>
+
+            </form>
+
+          </div>
+
+          <div class="products-page-right-container">
+            <div class="products-page-banner-container">
+              <div class="products-page-opacity-overlay"></div>
+              <div class="products-page-banner-text">
+                <h2>Just a Banner</h2>
+                <h5>This is just a banner.</h5>
+              </div>
+            </div>
+
+            <ul class="list-group" id="displayProductsErrorMessages">
+              <!-- dynamically generate any error messages -->
+            </ul>
+            <div id="productsPageRightInnerContainerItemContainer">
+
+              <!-- dynamically add products here -->
+              <!-- <div class="products-page-right-inner-container-item">
+                <div class="products-page-item-image-div">
+                  <a href="#">
+                    <img src="images/sample-product-image.jpg">
+                  </a>
+                </div>
+                <a href="#">
+                  <h3 class="font-h3">Sample Painting</h3>
+                </a>
+                <a href="#">
+                  <p class="font-p">Sample painting description will go here and be dynamically generated.</p>
+                </a>
+                <a href="#">
+                  <p class="font-p">Price: $5,295.00</p>
+                </a>
+              </div> -->
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Next Page -->
+        <!-- <div class="products-page-page-selector-container">
+          <ul id="productsPagePageSelectorUl"> -->
+            <!-- dynamically add page buttons here -->
+            <!-- if button should not be clickable, use btn button-disabled classes and remove anchor -->
+            <!-- <li class="btn button-disabled">Previous Page</li>
+            <li class="btn button-disabled">1</li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">2</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">3</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">4</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">5</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">6</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">7</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">8</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">9</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">10</a></li>
+            <li class="btn btn-outline-dark custom-dark-button"><a href="#">Next Page</a></li>
+          </ul>
+        </div>-->
+      </div>
+
+      <!-- Footer -->
+      <div class="row">
+        <footer id="Footer">
+          <div class="container">
+            <!-- <div class="footer-links">
+              <ul>
+                <li><a href="#">BUY ART</a></li>
+                <span>&nbsp;|&nbsp;</span>
+                <li><a href="#">SELL ART</a></li>
+                <span>&nbsp;|&nbsp;</span>
+                <li><a href="#">JOIN</a></li>
+                <span>&nbsp;|&nbsp;</span>
+                <li><a href="#">LOGIN</a></li>
+                <span>&nbsp;|&nbsp;</span>
+                <li><a href="#">ABOUT</a></li>
+                <span>&nbsp;|&nbsp;</span>
+                <li><a href="#">CART</a></li>
+              </ul>
+            </div> -->
+            <div class="copyright-section">
+              <p>
+                COPYRIGHT &copy; 2019 DANIELVBART, LLC &nbsp; | &nbsp; CHARLOTTE, NC
+              </p>
+              <p>
+                BY USING THIS SITE, YOU AGREE TO THE <a href="#" title="Privacy Policy">PRIVACY POLICY</a>.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- Products Page -->
+  <script src="js/products-page.js"></script>
+  <!-- Navbar Scroll JS -->
+  <script src="js/navbar-scroll.js"></script>
+
+</body>
+
+</html>

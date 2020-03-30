@@ -1,0 +1,152 @@
+#headerDiv {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}
+
+#vendingMachineFormsContainerDiv {
+  margin: 20px 0px 20px 0px;
+}
+
+#vendingMachineFormsContainerDiv label {
+  font-size: 1.5em;
+}
+
+#vendingMachineSelectionContainerDiv {
+  margin: 20px 0px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.vending-machine-item-button {
+  width: calc(33% - 30px);
+  padding-top: calc(33% - 30px);
+  /* 1:1 Aspect Ratio */
+  position: relative;
+  /* If you want text inside of it */
+  margin-bottom: 50px;
+}
+
+.empty-item {
+  background-color: #eb857a;
+}
+
+.vending-machine-item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.vending-machine-item-text p:nth-child(1) {
+  text-align: left;
+}
+
+.vending-machine-item-text p {
+  margin-bottom: 10px;;
+}
+
+#totalMoneyIn {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.two-button-row-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#addDollarButton,
+#addQuarterButton,
+#addDimeButton,
+#addNickelButton {
+  width: 125px;
+  margin-bottom: 20px;
+}
+
+#messages {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#makePurchaseButton,
+#changeReturnButton {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#itemNumber {
+  border-radius: .25rem;
+  background-color: #e9ecef;
+  opacity: 1;
+  border: 1px solid #ced4da;
+  height: calc(1.5em + .75rem + 2px);
+  text-align: center;
+}
+
+/* Media Queries ---------------------------------- */
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {
+
+  .vending-machine-item-button {
+    width: calc(50% - 30px);
+    padding-top: calc(50% - 30px);
+    /* 1:1 Aspect Ratio */
+    position: relative;
+    /* If you want text inside of it */
+    margin-bottom: 60px;
+  }
+
+  #totalMoneyIn {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  #messages {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {
+
+  .vending-machine-item-button {
+    width: calc(100% - 30px);
+    padding-top: calc(100% - 30px);
+    /* 1:1 Aspect Ratio */
+    position: relative;
+    /* If you want text inside of it */
+    margin-bottom: 60px;
+  }
+
+  #messagesForm {
+    text-align: center;
+  }
+
+}

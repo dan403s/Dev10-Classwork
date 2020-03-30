@@ -1,0 +1,791 @@
+/* Banner */
+h1,
+h2,
+h3,
+h4,
+.text-logo #logo {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+.banner-text-and-button {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.banner-text-and-button h1 {
+  display: none;
+}
+
+.banner-text-and-button h2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: normal;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.banner-text-and-button p {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: normal;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.banner-button-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+.banner-button-container a {
+  color: #FFFFFF;
+  font-weight: bold;
+  display: block;
+  text-align: center !important;
+  padding: 14px 0px 14px 0px;
+  font-size: 10.5pt;
+  text-decoration: none;
+  border-radius: 999px;
+}
+
+.banner-button-container a:hover {
+  background-color: #F2A538;
+  transition: background-color 0.5s;
+  text-decoration: none;
+}
+
+.banner-button {
+  border: 1px solid #F2A538 !important;
+}
+
+.opacity-on {
+  opacity: 0.2;
+  transition: opacity 0.5s ease-out;
+}
+
+.opacity-half {
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in;
+}
+
+.wpb_wrapper>div {
+  margin-bottom: 0px;
+}
+
+.banner-container {
+  height: 450px;
+  min-height: 450px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  /* FIX NAVBAR OVERLAP */
+  margin-top: 86px;
+}
+
+.banner-boxes-container {
+  display: flex;
+  display: -webkit-flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: #282828;
+  overflow: hidden;
+}
+
+.banner-background-1 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-2 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-3 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-4 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-5 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-6 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-7 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-8 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-9 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-10 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-11 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-12 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-13 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-14 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-15 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-16 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image16.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-17 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-18 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image18.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-19 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image19.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-20 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image20.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-21 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image21.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-22 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-23 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image23.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-24 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-25 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image25.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-26 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image26.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-27 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image27.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-28 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image28.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-29 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-30 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image30.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-31 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image31.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-32 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image32.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-33 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image33.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-34 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image34.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-35 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image35.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.banner-background-36 {
+  background-image: url("https://danielvbart.com/wp-content/uploads/2019/05/banner-background-image36.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  min-width: 200px;
+  flex-grow: 1;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+/* Media Queries ---------------------------------- */
+/* Side Tablet ------------------------------------ */
+@media screen and (max-width:1199px) {}
+
+/* Tablet Big ------------------------------------- */
+@media only screen and (max-width: 991px) {
+
+  /* Banner */
+  .banner-text-and-button {
+    margin-top: 3px;
+  }
+
+  .banner-text-and-button h2 {
+    font-size: 2.5em !important;
+  }
+
+  .banner-text-and-button p {
+    font-size: 1.25em !important;
+  }
+
+  .banner-button-container {
+    width: 130px !important;
+  }
+
+  .banner-button-container a {
+    padding: 14px 0px 14px 0px;
+  }
+}
+
+/* Tablet ----------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+  /* Banner */
+  .banner-container {
+    height: calc(100vh - 80px) !important;
+  }
+
+  .banner-text-and-button {
+    margin-top: 2px;
+  }
+
+  .banner-text-and-button h2 {
+    font-size: 2.25em !important;
+  }
+
+  .banner-text-and-button p {
+    font-size: 1.125em !important;
+  }
+
+  .banner-background-1 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-2 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-3 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-4 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-5 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-6 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-7 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-8 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-9 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-10 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-11 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-12 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-13 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-14 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-15 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-16 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-17 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-18 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-19 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-20 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-21 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-22 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-23 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-24 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-25 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-26 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-27 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-28 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-29 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-30 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-31 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-32 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-33 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-34 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-35 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  .banner-background-36 {
+    min-height: 120px;
+    min-width: 160px;
+  }
+
+  /* Home Page Lead In */
+  #home-lead-in-row h2 {
+    line-height: normal;
+  }
+}
+
+/* Mobile ----------------------------------------- */
+@media only screen and (max-width: 575px) {
+
+  /* Banner */
+  .banner-text-and-button h2 {
+    font-size: 2em !important;
+  }
+
+  .banner-text-and-button p {
+    font-size: 1em !important;
+  }
+}

@@ -1,0 +1,79 @@
+.buyer-registration-page-container {
+  height: 1015px;
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../images/buyer-registration-form-background.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  /* FIX NAVBAR OVERLAP */
+  margin-top: 86px;
+}
+
+#buyerRegistrationErrorMessages {
+  position: absolute;
+  z-index: 1;
+}
+
+.buyer-registration-form-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyer-registration-form-container-opacity {
+  height: 1015px;
+  position: absolute;
+  width: 100%;
+  background-color: #282828;
+  opacity: 0.5;
+}
+
+.buyer-registration-form-container form {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: 15px;
+  padding: 50px;
+  height: auto;
+  width: 400px;
+  position: absolute;
+  background-color: #f1f1f1;
+}
+
+.buyer-registration-form-container h2 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 30px !important;
+}
+
+.buyer-registration-form-container p {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 30px !important;
+  margin-bottom: 0px !important;
+  font-size: .75em;
+}
+
+/* Media Queries ---------------------------------- */
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {
+
+  .buyer-registration-form-container form {
+    padding: 30px;
+    width: 300px;
+  }
+
+}

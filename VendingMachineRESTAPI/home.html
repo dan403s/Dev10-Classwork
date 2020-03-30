@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VendingMachineRESTAPI</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="container">
+    <!-- header row -->
+    <div class="row">
+      <div class="col">
+        <div id="headerDiv">
+          <h2>Vending Machine</h2>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- error message -->
+    <ul class="list-group" id="errorMessages">
+      <!-- dynamically generate any error messages -->
+    </ul>
+
+    <!-- main row -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container">
+          <div id="vendingMachineSelectionContainerDiv">
+            <!-- dynamically add here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="vendingMachineFormsContainerDiv">
+          <!-- add money form -->
+          <form role="form" id="addMoneyForm">
+            <div class="form-group col-12 text-center">
+              <label for="totalMoneyIn">Total $ In</label>
+              <input type="text" class="form-control text-center" id="totalMoneyIn" placeholder="0.00" readonly>
+            </div>
+
+            <div class="form-row col-12">
+              <div class="two-button-row-div">
+                <button type="button" id="addDollarButton" class="btn btn-outline-dark" onclick="addDollar()">
+                  Add Dollar
+                </button>
+
+                <button type="button" id="addQuarterButton" class="btn btn-outline-dark" onclick="addQuarter()">
+                  Add Quarter
+                </button>
+              </div>
+            </div>
+
+            <div class="form-row col-12">
+              <div class="two-button-row-div">
+                <button type="button" id="addDimeButton" class="btn btn-outline-dark" onclick="addDime()">
+                  Add Dime
+                </button>
+
+                <button type="button" id="addNickelButton" class="btn btn-outline-dark" onclick="addNickel()">
+                  Add Nickel
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <hr />
+
+          <!-- messages form -->
+          <form role="form" id="messagesForm">
+            <div class="form-group col-12 text-center">
+              <label for="messages">Messages</label>
+              <input type="text" class="form-control text-center" id="messages" readonly>
+            </div>
+
+            <div class="form-row form-inline form-group col-12">
+              <label class="col-md-4" for="itemName">Item:</label>
+              <input class="col-md-8" type="text" class="form-control text-center" id="itemNumber" readonly>
+            </div>
+
+            <div class="form-row col-12">
+              <button type="button" id="makePurchaseButton" class="btn btn-outline-dark">
+                Make Purchase
+              </button>
+            </div>
+          </form>
+
+          <hr />
+
+          <!-- change form -->
+          <form role="form" id="changeForm">
+            <div class="form-group col-12 text-center">
+              <label for="change">Change</label>
+              <input type="text" class="form-control text-center" id="change" readonly>
+            </div>
+
+            <div class="form-row col-12">
+              <button type="button" id="changeReturnButton" class="btn btn-outline-dark" onclick="returnChange()">
+                Change Return
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- Custom JS -->
+  <script src="js/home.js"></script>
+</body>
+
+</html>

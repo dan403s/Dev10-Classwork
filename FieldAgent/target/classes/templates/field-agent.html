@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FieldAgent Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="custom-css.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="home">Home <span class="sr-only">(current)</span></a>
+          <!-- <a class="nav-item nav-link" href="field-agent">Field Agent</a>
+          <a class="nav-item nav-link" href="assignment">Assignment</a> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h2 class="field-agent-h2">Field Agent</h2>
+
+      <div id="field-agent-form-and-table-container">
+        <div class="validation-errors">
+          <div class="col-12 m-1 text-center" th:if="${!errors.isEmpty()}">
+            <p class="alert alert-danger" th:each="error : ${errors}" th:text="${error.message}">Error message</p>
+          </div>
+          <div class="col-12 m-1 text-center" th:if="${!customErrors.isEmpty()}">
+            <p class="alert alert-danger" th:each="customError : ${customErrors}" th:text="${customError}">Error message</p>
+          </div>
+        </div>
+        <form class="margin-bottom" id="field-agent-form" action="field-agent" method="POST">
+          <div class="form-row">
+            <div class="form-group col">
+              <label>First Name</label>
+              <input class="form-control" th:value="${agent.firstName}" type="text" name="firstName" id="firstName">
+            </div>
+            <div class="form-group col">
+              <label>Middle Name</label>
+              <input class="form-control" th:value="${agent.middleName}" type="text" name="middleName" id="middleName">
+            </div>
+            <div class="form-group col">
+              <label>Last Name</label>
+              <input class="form-control" th:value="${agent.lastName}" type="text" name="lastName" id="lastName">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Birth Date</label>
+              <input class="form-control" type="date" th:value="${agent.birthDate}" name="agentBirthDate"
+                id="agentBirthDate">
+            </div>
+            <div class="form-group col">
+              <label>Height</label>
+              <input class="form-control" type="number" th:value="${agent.height}" name="editAgentHeight" id="editAgentHeight">
+            </div>
+          </div>
+          <fieldset>
+            <legend>Agency</legend>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Identifier</label>
+                <input class="form-control" th:value="${agent.identifier}" type="text" name="identifier"
+                  id="identifier">
+              </div>
+              <div class="form-group col">
+                <label>Agency</label>
+                <select class="form-control" id="agencies" name="agencyId">
+                  <option disabled>- Select -</option>
+                  <option th:each="agency : ${agencies}" th:value="${agency.agencyId}" th:text="${agency.name}"
+                    th:selected="${agent.agency.agencyId == agency.agencyId}">
+                    Agency Name</option>
+                </select>
+              </div>
+              <div class="form-group col">
+                <label>Security Clearance</label>
+                <select class="form-control" id="securityClearances" name="securityClearanceId">
+                  <option disabled>- Select -</option>
+                  <option th:each="securityClearance : ${securityClearances}"
+                    th:value="${securityClearance.securityClearanceId}" th:text="${securityClearance.name}"
+                    th:selected="${agent.securityClearance.securityClearanceId == securityClearance.securityClearanceId}">
+                    Security Clearance Name</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+
+              <div class="form-group col">
+                <label>Activation Date</label>
+                <input class="form-control" type="date" th:value="${agent.activationDate}" name="agentActivationDate"
+                  id="agentActivationDate">
+              </div>
+
+              <div class="form-group col align-self-end">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" th:checked="${isActiveBoolean}" value="true"
+                    name="isActiveCheckbox" id="isActiveCheckbox">
+                  <label class="form-check-label">Is Active</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <img th:src="@{${agent.pictureUrl}}">
+          </div>
+          <div class="form-group">
+            <label>Picture Url</label>
+            <input class="form-control" type="url" th:value="${agent.pictureUrl}" name="pictureUrl" id="pictureUrl">
+          </div>
+
+          <input type="hidden" name="oldIdentifier" th:value="${agent.identifier}" />
+          <button type="submit" class="btn btn-primary">Save</button>
+          <a href="home" class="btn btn-secondary">Cancel</a>
+        </form>
+        <hr class="w-100" />
+        <div class="row margin-bottom w-100">
+          <div class="col">
+            <h3>Assignments</h3>
+          </div>
+          <div class="col right">
+            <a class="btn btn-primary float-right" href="#" th:href="@{/assignment(identifier=${agent.identifier})}">Add
+              an Assignment</a>
+          </div>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr th:each="assignment : ${assignments}">
+              <td><span th:text="${assignment.country.name}"></span></td>
+              <td><span th:text="${assignment.startDate}"></span></td>
+              <td><span th:text="${assignment.projectedEndDate}"></span></td>
+              <td>
+                <form action="delete-assignment" method="POST">
+                  <input type="hidden" name="assignmentId" th:value="${assignment.assignmentId}" />
+                  <input type="hidden" name="identifier" th:value="${agent.identifier}" />
+                  <button type="submit" class="btn btn-danger float-left">Delete</button>
+                </form>
+
+                <form action="assignment" method="GET">
+                  <input type="hidden" name="assignmentId" th:value="${assignment.assignmentId}" />
+                  <input type="hidden" name="identifier" th:value="${agent.identifier}" />
+                  <button type="submit" class="btn btn-secondary float-left ml-1">View/Edit</button>
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

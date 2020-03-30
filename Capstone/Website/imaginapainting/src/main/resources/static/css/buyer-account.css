@@ -1,0 +1,516 @@
+.buyer-account-page-outer-container {
+  /* FIX NAVBAR OVERLAP */
+  margin-top: 86px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.buyer-account-page-left-container {
+  width: 250px;
+  float: left;
+  background-color: rgb(0, 83, 143);
+  height: 100%;
+}
+
+.buyer-account-page-inner-left-container {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+  background-color: #ffffff;
+}
+
+.buyer-account-page-inner-left-container button {
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+}
+
+.buyer-account-page-right-container {
+  width: calc(100% - 250px);
+  float: right;
+  background-color: rgba(196, 196, 196, 0.377);
+}
+
+.buyer-account-page-inner-right-container h2 {
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+#buyerAccountPageAllOrdersSection {
+  padding: 0px 20px 0px 20px;
+}
+
+.buyer-account-page-right-inner-container-order {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+}
+
+.buyer-account-page-right-inner-order-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buyer-account-page-right-inner-order-summary-text-block {
+  width: 33.33333%;
+}
+
+.buyer-account-page-right-inner-container-order a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buyer-account-page-right-inner-container-order a:hover {
+  color: #2190E1;
+}
+
+.buyer-account-page-right-inner-order-details-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.buyer-account-page-order-image-div {
+  width: 225px;
+}
+
+.buyer-account-page-order-image-div img {
+  max-width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.buyer-account-page-order-text-div {
+  width: calc(100% - 225px);
+  padding: 20px 20px 20px 20px;
+  margin: 15px 0px 0px 0px;
+}
+
+.buyer-account-page-order-text-div h4 {
+  margin: 5px 0px 5px 0px;
+}
+
+.buyer-account-page-order-text-div p {
+  margin: 5px 0px 5px 0px;
+}
+
+.buyer-account-page-order-page-selector-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 20px 20px 20px 20px;
+}
+
+.buyer-account-page-order-page-selector-container a {
+  color: inherit;
+}
+
+.buyer-account-page-order-page-selector-container a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#buyerAccountPageOrderPageSelectorUl {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.button-disabled {
+  color: #888;
+  border: none;
+}
+
+.button-disabled:hover {
+  color: #888;
+  border: none;
+  background-color: none;
+  cursor: default;
+}
+
+.button-disabled:hover a {
+  color: #888;
+  border: none;
+  background-color: none;
+}
+
+#buyerAccountPageFavoritesSection {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 20px 0px 20px;
+}
+
+#buyerAccountPageFavoritesSection h2 {
+  width: 100%;
+}
+
+#buyerAccountPageFavoritesSectionDiv {
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.buyer-account-page-favorites-right-inner-container-item {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 260px;
+  padding: 20px 20px 20px 20px;
+  margin: 0px 5px 20px 5px;
+  background-color: #ffffff;
+}
+
+.buyer-account-page-favorites-right-inner-container-item h3 {
+  margin: 20px 0px 20px 0px;
+  overflow-wrap: break-word;
+}
+
+.buyer-account-page-favorites-right-inner-container-item a {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.buyer-account-page-favorites-right-inner-container-item a:hover {
+  color: #2190E1;
+}
+
+.buyer-account-page-favorites-item-image-div img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.buyer-account-page-favorites-page-selector-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  padding: 20px 20px 20px 20px;
+}
+
+.buyer-account-page-favorites-page-selector-container a {
+  color: inherit;
+}
+
+.buyer-account-page-favorites-page-selector-container a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#buyerAccountPageFavoritesPageSelectorUl {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#buyerAccountPageAccountDetailsSection {
+  padding: 0px 20px 20px 20px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#buyerAccountPageAccountDetailsSection h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.buyer-account-page-account-details-form-container {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  margin: 0px 0px 0px 0px;
+  background-color: #ffffff;
+}
+
+#buyerAccountPageInnerRightContainerErrorMessages {
+  width: 100%;
+}
+
+#buyerAccountPageAccountDetailsForm {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#buyerAccountPageAccountDetailsForm>div {
+  width: 50%;
+  margin: 10px 0px 10px 0px;
+}
+
+#buyerAccountPageAccountDetailsForm input {
+  width: 300px;
+}
+
+#buyerAccountPageAccountDetailsForm select {
+  width: 300px;
+}
+
+#buyerAccountPageAccountDetailsForm hr {
+  width: 100%;
+}
+
+#buyerAccountPageAccountDetailsForm button {
+  margin: 0px 0px 0px 5px;
+}
+
+#buyerAccountPageAccountDetailsEditPasswordButton {
+  margin: 0px 0px 0px 0px !important;
+}
+
+#buyerAccountPageAccountDetailsSaveButtonDiv,
+#buyerAccountPageAccountDetailsDeleteAccountButtonDiv {
+  text-align: center;
+  width: 100% !important;
+}
+
+#buyerAccountPageAccountDetailsEditPasswordModal {}
+
+.readonly {
+  background-color: #d1d1d1;
+  pointer-events: none;
+}
+
+.readonly:focus {
+  background-color: #d1d1d1;
+}
+
+#buyerAccountStatus {
+  animation: accountStatusText 1s infinite;
+}
+
+@keyframes accountStatusText {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+
+  50% {
+    color: #000;
+  }
+
+  100% {
+    color: rgb(245, 0, 0);
+  }
+}
+
+.list-group-item.list-group-item-danger {
+  width: 100%;
+}
+
+/* Media Queries ---------------------------------- */
+@media screen and (max-width:1199px) {
+
+  .buyer-account-page-order-page-selector-container {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  #buyerAccountPageOrderPageSelectorUl {
+    padding: 0px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-wrap: wrap;
+  }
+
+  #buyerAccountPageOrderPageSelectorUl li {
+    margin: 10px 2px 0px 2px;
+  }
+
+  .buyer-account-page-favorites-page-selector-container {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  #buyerAccountPageFavoritesPageSelectorUl {
+    padding: 0px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-wrap: wrap;
+  }
+
+  #buyerAccountPageFavoritesPageSelectorUl li {
+    margin: 10px 2px 0px 2px;
+  }
+
+  #buyerAccountPageAccountDetailsForm button {
+    margin: 5px 0px 0px 0px;
+  }
+
+}
+
+@media screen and (max-width:991px) {
+
+  .buyer-account-page-right-inner-container-order {
+    padding: 5px 15px 15px 15px;
+  }
+
+  .buyer-account-page-right-inner-order-summary-text-block {
+    width: 50%;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .buyer-account-page-order-image-div {
+    width: 100%;
+  }
+
+  .buyer-account-page-order-image-div img {
+    max-width: 100%;
+  }
+
+  .buyer-account-page-order-text-div {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+
+  #buyerAccountPageAccountDetailsForm>div {
+    width: 100%;
+  }
+
+  #buyerAccountPageAccountDetailsForm button {
+    margin: 0px 0px 0px 5px;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+
+  .buyer-account-page-left-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .buyer-account-page-right-container {
+    width: 100%;
+    float: left;
+  }
+
+  .buyer-account-page-right-inner-order-summary-text-block {
+    width: 50%;
+  }
+
+  .buyer-account-page-order-text-div {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .buyer-account-page-order-page-selector-container {
+    padding: 10px 20px 20px 20px;
+  }
+
+  .buyer-account-page-favorites-right-inner-container-item {
+    width: 350px;
+  }
+
+  .buyer-account-page-favorites-page-selector-container {
+    padding: 10px 20px 20px 20px;
+  }
+
+  #buyerAccountPageAccountDetailsForm>div {
+    width: 100%;
+  }
+
+  #buyerAccountPageAccountDetailsForm input {
+    width: 380px;
+  }
+
+  #buyerAccountPageAccountDetailsForm select {
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width:575px) {
+
+  .buyer-account-page-favorites-right-inner-container-item {
+    width: 100%;
+  }
+
+  .buyer-account-page-favorites-item-image-div img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .buyer-account-page-favorites-right-inner-container-item {
+    width: 100%;
+  }
+
+  .buyer-account-page-right-inner-order-summary-text-block {
+    width: 100%;
+  }
+
+  #buyerAccountPageAccountDetailsForm input {
+    width: 100%
+  }
+
+  #buyerAccountPageAccountDetailsForm select {
+    width: 100%
+  }
+
+  #buyerAccountPageAccountDetailsForm button {
+    margin: 5px 0px 0px 0px;
+  }
+
+}
